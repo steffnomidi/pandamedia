@@ -1,0 +1,16 @@
+
+@font-face {
+  font-family: 'Panton-BlackCaps';
+  src: url('Panton-BlackCaps.eot?#iefix') format('embedded-opentype'),  url('Panton-BlackCaps.otf')  format('opentype'),
+	     url('Panton-BlackCaps.woff') format('woff'), url('Panton-BlackCaps.ttf')  format('truetype'), url('Panton-BlackCaps.svg#Panton-BlackCaps') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UniSansHeavyCAPS';
+  src: url('UniSansHeavyCAPS.eot?#iefix') format('embedded-opentype'),  url('UniSansHeavyCAPS.otf')  format('opentype'),
+	     url('UniSansHeavyCAPS.woff') format('woff'), url('UniSansHeavyCAPS.ttf')  format('truetype'), url('UniSansHeavyCAPS.svg#UniSansHeavyCAPS') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

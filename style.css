@@ -1,0 +1,566 @@
+/*
+Theme Name: Panda WP Theme
+Version: 0.0.1 (dev)
+ */
+
+
+/**********************/
+/*** ВЫЧУРНЫЕ ФОНТЫ ***/
+ 
+ /* подключаем фонты */
+@import "fonts/styles.css";
+
+/* джаст фор тэст
+section div {
+	background: rgba(0,0,0,.03);
+}
+ */
+
+
+/*чтобы футер прижимался к полу */ 
+html, body {
+	height: 100%;
+}
+ 
+section>div {
+	padding: 30px 0;
+}
+body 	{
+	font-family: 'Open Sans', sans-serif;
+}
+
+/* примеры подключенных фонтов */ 
+.pantfont {
+	font-family: 'Panton-BlackCaps', sans-serif;
+}
+.unifont {
+	font-family: 'UniSansHeavyCAPS', sans-serif;	
+}
+ .osfont {
+	font-family: 'Open Sans', sans-serif;
+ }
+
+/************************/
+/******** ХЕДЕР *********/
+
+/*** псевдоколонка ***/
+.col {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+/* фоны */
+
+.top-background {
+	background: url(images/back-hero.jpg) #3498db;
+	background-position: 50% 0;
+	background-size: cover;
+	position: relative;
+	padding-bottom: 55px;
+	
+}
+.top-background:after {
+	content: "";
+	display: block;
+	position: absolute;
+	bottom: -5px;
+	width: 100%;
+	height: 200px;
+	background: url(images/hmari-bottom.png) 50% 100% repeat-x , url(images/hmari-hero-bottom.png) 50% 100% repeat-x transparent;
+}
+.hero {
+	position:relative;
+	z-index: 5;
+}
+.hero .owlcarousel {
+	width: 90%;
+	margin: 0 auto;
+}
+.hero .owl-prev, .hero .owl-next {
+	width: 14px;
+	height: 22px;
+	position: absolute;
+	top: 45%;
+	color: transparent;
+}
+.hero .owl-prev { background: url(images/hero-prev.png); left: -45px; }
+.hero .owl-next { background: url(images/hero-next.png); right: -45px; }
+.hero .owlcarousel .slide { 
+	height: 430px;
+	color: #fff;
+}
+.hero .owlcarousel .slide h2.title, .hero .owlcarousel .slide .subtitle {
+	text-transform: uppercase;
+	font-weight: 800;
+	text-align: left;
+	text-shadow: 0 5px 5px rgba(0, 0, 0, .1);
+}
+.hero .owlcarousel .slide .action-name {
+    padding-top: 5.5em;
+	}
+.hero .owlcarousel .slide .action-name h2.title {
+	font-size: 3.4em;
+
+}
+.hero .owlcarousel .slide .action-name .subtitle {
+	font-size: 2.6em;
+}
+.hero .owlcarousel .slide .action-name .rearrow {
+	height: 118px;
+	background: url(images/hero-rearrow.png) 100% 0 no-repeat;
+}
+
+.header {
+	background: transparent;
+    z-index: 5;
+    position: relative;
+}
+}
+.header .container {
+	padding: 15px;
+}
+
+@media (max-width: 1199px) {
+.hero .owlcarousel .slide .action-name  { font-size: .9em; }
+}
+
+/* логотип */
+.logo {
+	background: url(images/logo.png) 0 0 no-repeat;
+	height: 84px;
+    width: 200px;
+	float: left;
+}
+.footer .logo {
+	background: url(images/logo-footer.png) 0 0 no-repeat;
+}
+.logo a {
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	z-index: 21;
+}
+ 
+/* стили меню лендинга */
+.land-menu {
+	padding: 0;
+	margin: 24px 0 0;
+	list-style: none;
+	text-align: center;
+} 
+.land-menu li {
+	font-size: 1.15em;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	margin: 0 15px;
+	/* text-shadow: 0 0 1px rgba(0,0,0,.4);	 */
+}
+.land-menu .icon {
+	padding-top: 3px;
+	padding-left: 32px;
+	background-repeat: no-repeat;
+	
+}
+/* иконки меню */
+.land-menu .icon.icon-ser { background-image: url(images/icon-ser.png); }
+.land-menu .icon.icon-rev { background-image: url(images/icon-rev.png); }
+.land-menu .icon.icon-por { background-image: url(images/icon-por.png); }
+.land-menu .icon.icon-blo { background-image: url(images/icon-blo.png); }
+.land-menu .icon.icon-con { background-image: url(images/icon-con.png); }
+
+/* телефон */
+.recall {
+	float: right;
+	width: 250px;
+	z-index: 20;
+}
+
+.phone {
+	float: right;
+	font-size: 2.1em;
+	color: #fff;
+	text-align: center;
+}
+.phone .overcall-link {
+    font-size: .55em;
+	text-align: center;
+	text-decoration: none;
+	border-bottom: 1px dotted #fff;
+	display: block;
+	color: #fff;
+}
+.footer .phone, .footer .phone .overcall-link {
+	color: #383838;
+}
+
+
+
+/***************************/
+/**** ДАЛЬШЕ ПРО СЕКЦИИ ****/
+
+/* убираем паддинги у контейнера */
+.section .container {
+	padding: 15px;
+}
+section { overflow: hidden; }
+
+/*заголовки секций */
+section .title {
+	text-align: center;
+}
+section .title h3 {
+	font-family: 'UniSansHeavyCAPS', sans-serif;
+	font-size: 1.65em;
+	line-height: 1.3em;
+	text-align: center;
+	color: #54809e;
+	position: relative;
+	display: inline-block;
+	letter-spacing: .02em;
+}
+section .title.blue h3:before, section .title.blue h3:after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 29px;
+	height: 4px;
+	top: 36%;
+	background-image: url(images/orangedots.png);
+}
+section .title.blue h3:before {	left: -2.1em; }
+section .title.blue h3:after { right: -2.1em; }
+
+section .title.white h3{
+	color: #fff;
+}
+
+/* Секция: Комплексный интернет-маркетинг */
+
+.complex .row {
+
+}
+.complex .slot {
+	padding-top: 115px;
+	margin: 40px 0 10px;
+	background-position: 50% 0;
+	background-repeat: no-repeat;
+}
+@media (max-width: 500px){
+	.complex .slot {
+		width: 100%;
+		padding: 115px 10% 30px;
+	}
+}
+.complex .slot h4 {
+	text-align: center;
+	font-size: 1.35em;
+	font-family: 'UniSansHeavyCAPS', sans-serif;	
+	color: #54809e;
+}
+.complex .slot h4 span {
+	display: block;
+	font-size: .62em;
+	font-family: 'Open Sans', sans-serif;
+	width: 70%;
+	margin: .8em auto 2em;
+	color: #aaa9a9;
+}
+.complex .slot p {
+	color: #676767;
+	font-size: .9em;
+}
+.complex .slot.raz { background-image: url(images/znak-raz.png); }
+.complex .slot.pro { background-image: url(images/znak-pro.png); }
+.complex .slot.tar { background-image: url(images/znak-tar.png); }
+.complex .slot.int { background-image: url(images/znak-int.png); }
+.complex .slot.uza { background-image: url(images/znak-uza.png); }
+.complex .slot.obu { background-image: url(images/znak-obu.png); }
+.complex .slot.mar { background-image: url(images/znak-mar.png); }
+.complex .slot.kon { background-image: url(images/znak-kon.png); }
+
+
+
+
+
+
+
+
+/* Секция: Наши клиенты */
+.clients .container {
+	padding: 0 15px;
+}
+.owlcarousel {
+	margin-top: 1.5em;
+}
+
+.clients {
+	background: url(images/back-clients.jpg);
+	background-size: cover;
+	background-position: 50% 50%;
+	margin-left: -2%;
+	margin-right: -2%;
+	position: relative;
+	padding: 75px 2%;
+}
+.clients:before, .clients:after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 75px;
+}
+.clients:before {
+	top: -5px;
+	background: url(images/hmari-top.png) repeat-x;
+}
+.clients:after{
+	bottom: -5px;
+	background: url(images/hmari-bottom.png) repeat-x;
+}
+.clients img {
+	width: 94% !important;
+	margin: 0 3% 10%;
+	background: transparent;
+	border-radius: 4px;
+	box-shadow: 0 0 10px 0 rgba(0,0,0,.15);
+}
+
+
+
+
+/* Секция: ЧТО МЫ МОЖЕМ СДЕЛАТЬ ДЛЯ ВАШЕГО БИЗНЕСА? */
+.that {
+	background: url(images/panda-pattern.png) repeat-x 50% 50% transparent;
+}
+.that .panda{
+	margin: 30px 0;
+	min-height: 600px;
+	background: url(images/panda.png);
+	background-size: contain;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	position: relative;
+}
+.that .panda:before{
+	content: "";
+	
+}
+.that .bubble {
+	box-shadow: 0px 5px 15px 5px rgba(0,0,0,.1);
+	background: #fff;
+	border-radius: 5px;
+	width: 27.3%;
+	padding: 20px;
+	position: absolute;
+}
+.that .bubble:after {
+	content: "";
+	width: 48px;
+	height: 48px;
+	display: block;
+	background: url(images/kryzhik.png);
+	top: -20px;
+	left: -20px;
+	position: absolute;
+}
+.that .bubble h4.title {
+	font-size: 1.2em;
+	text-align: left;
+	font-family: 'UniSansHeavyCAPS', sans-serif;	
+	margin: 15px 0 15px;
+	color: #6e7b84;	
+}
+.that .bubble div{
+	font-size: 0.9em;
+}
+.bubble.b-1{ top: 0; left: 0;}
+.bubble.b-2{ top: 0; right: 0;}
+.bubble.b-3{ bottom: 20%; left: 0;}
+.bubble.b-4{ bottom: 20%; right: 0;}
+
+
+
+@media (max-width: 1199px) {
+.that .bubble { width: 30%;}
+.that .panda{ min-height: 450px;}
+.bubble.b-3, .bubble.b-4 { bottom: 0;}
+}
+
+.that .owlcarousel .bubble {
+	margin: 10% 5% 10% 15%;
+	width: 80%;
+	position: relative;
+}
+
+/* Секция: КОГДА СРАВНИВАЮТ — ВЫБИРАЮТ НАС! */
+
+.there {
+	background: url(images/back-there.jpg) #3498db;
+	background-size: cover;
+	position: relative;
+}
+.there .subtitle {
+	color: white;
+	font-weight: 600;
+	margin: 4px 0 30px;
+}
+.there:after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    height: 14px;
+    background: url(images/vawe.png) repeat-x 50% 100%;
+    width: 100%;
+}
+
+
+
+/* Секция: НОВОЕ В БЛОГЕ */
+.blog h4.title {
+	font-size: 16px;
+	text-align: left;
+	font-family: 'UniSansHeavyCAPS', sans-serif;	
+	margin: 15px 0 15px;	
+}
+.blog h4.title a {
+	color: #4fa7e2;
+	}
+.blog .post-content {
+	font-size: .9em;
+}
+.blog img {
+	border-radius: 5px;
+}
+
+
+
+
+/* прижатый футер */
+.wrap {
+	height: auto !important;
+	height: 100%;
+	min-height: 100%;
+	position: relative;
+}
+.empty {
+	height: 118px; /* равняется высоте футера */
+}
+.footer {
+	height: 118px;
+	margin-top: -118px;
+	position: relative;
+}
+
+/* всё остальное про футер */
+.footer {
+	background: #eefafe;
+}
+.footer .container {
+	padding: 15px;
+}
+
+
+
+
+/* формы (осторожно, дохера магии) */
+.form-container {
+	border-radius: 5px;
+	border: 5px solid #6bb8ed;
+	background: #fff;
+	padding: 2em 12px 1.5em;
+    box-shadow: 0 0 12px 3px rgba(0,0,0,.1);
+    margin: 15px;
+}
+input[type=text], input[type=email], input[type=submit] {
+	background: #f2f2f2; /* Old browsers */
+	background: -moz-linear-gradient(top, #f2f2f2 0%, #ffffff 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f2f2f2), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #f2f2f2 0%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #f2f2f2 0%,#ffffff 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #f2f2f2 0%,#ffffff 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #f2f2f2 0%,#ffffff 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+	border-radius: 4px;	width: 100%;
+	padding: 1.5em;
+	font-size: 1.15em;
+	font-weight: 600;
+	margin-bottom: .8em;
+	border: 1px solid #ccc;
+	color: #676767;
+}
+input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #9c9c9c;
+}
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #9c9c9c;
+   opacity:  1;
+}
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #9c9c9c;
+   opacity:  1;
+}
+input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #9c9c9c;
+}
+input[type=submit] {
+	color: #fff;
+	background: #fed53e; /* Old browsers */
+	background: -moz-linear-gradient(top,  #fed53e 0%, #e59c04 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fed53e), color-stop(100%,#e59c04)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #fed53e 0%,#e59c04 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #fed53e 0%,#e59c04 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #fed53e 0%,#e59c04 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #fed53e 0%,#e59c04 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fed53e', endColorstr='#e59c04',GradientType=0 ); /* IE6-9 */
+	border: 1px transparent solid;
+	border-top: 1px #ffeab3 solid;
+	box-shadow: 1px 2px 1px 0 rgba(255,255,255,.3) inset;
+	font-weight: 800;
+}
+
+
+/* буллиты карусели */
+.owlcarousel .owl-dots {
+	text-align: center;
+	margin-top: 1.2em;
+}
+.owlcarousel .owl-dot {
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background-color: #c9c9c9;
+	display: inline-block;
+	margin: 3px;
+}
+.owlcarousel .owl-dot.active {
+	background-color: #fff;
+}
+
+/* буллиты карусели на белом фоне */
+.owlcarousel.white .owl-dot {
+	background-color: #b1d7f1;
+}
+.owlcarousel.white .owl-dot.active {
+	background-color: #44a1e0;
+}
+
+
+/* ... и модалки */
+.modal-content {
+	background: transparent;
+	border-radius: 0;
+	border: 0;
+	box-shadow: none;
+}
+.modal-content .cross-circle {
+    width: 63px;
+    height: 65px;
+    position: absolute;
+    right: -53px;
+    top: -42px;
+    background: url(images/cross-circle.png);
+	opacity: 1;
+}
